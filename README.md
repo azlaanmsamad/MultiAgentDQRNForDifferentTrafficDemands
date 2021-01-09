@@ -18,17 +18,28 @@ This can be studied by measuring the time complexity and the actual runtime for 
 ## Methodology:
 The state is defined in terms of a binary matrix representing a traffic intersection, where 1 corresponds to a car at that position. This is inputted into the deep Convolutional Recurrent Neural Network which outputs the Q-value. For inferential purpose, the action corresponding to the maximum Q-value is implemented. 
 
-An open source software [Simulation of Urban MObility (SUMO)](https://www.eclipse.org/sumo/) was used for simulating traffic scenarios. 
-
 ## Single Agent Implementation:
 ![Methodology](https://github.com/azlaanmsamad/MultiAgentDQRNForDifferentTrafficDemands/blob/main/presentation/methodology.png)
 
 ## Reward Function:
-Reward functions were modelled in terms of average delay and average waiting time at each time step where delay accounts for slow moving cars and waiting time for stationary cars.
+Reward functions were modelled in terms of average delay and average waiting time at each time step where delay accounts for slow moving cars and waiting time for stationary cars. The reward function is defined as shown below:
+![rewardFucn](https://github.com/azlaanmsamad/MultiAgentDQRNForDifferentTrafficDemands/blob/main/presentation/rewardFunction.png)
 
+## Simulation of Urban MObility (SUMO):
+An open source software [Simulation of Urban MObility (SUMO)](https://www.eclipse.org/sumo/) was used for simulating traffic scenarios. A python script is implemented in order to communicate with the software. A generic way of implementation is shown below:
+![SUMO](https://github.com/azlaanmsamad/MultiAgentDQRNForDifferentTrafficDemands/blob/main/presentation/sumo.png)
 
+## Multi Agent Coordination Algorithms with Transfer Learning:
+Three Algorithms used in are:
 
+* Individual Coordination:
+![IC](https://github.com/azlaanmsamad/MultiAgentDQRNForDifferentTrafficDemands/blob/main/presentation/IndividualCoordinationAlgo.png)
 
+* Brute Coordination:
+![BC](https://github.com/azlaanmsamad/MultiAgentDQRNForDifferentTrafficDemands/blob/main/presentation/TP_BruteCoordination.png)
+
+* Maxplus Algorithm:
+![MP](https://github.com/azlaanmsamad/MultiAgentDQRNForDifferentTrafficDemands/blob/main/presentation/maxplusAlgo.png)
 
 ## Results:
 
