@@ -61,5 +61,5 @@ The Transfer Planning approach significantly saves computational cost and time. 
 * How does the TLC agent perform for different traffic demands?
 For a given number of intersections, the increase in the traffic demand causes an introduction of fluctuations. There is an increase in the average travel time and the dip in rewards as the traffic demand increases. The increase in fluctuations when the demand increases varies for the different number of intersections.
 
-• How does the different coordination algorithms perform computationally in case of Traffic Light Control problem?
+* How does the different coordination algorithms perform computationally in case of Traffic Light Control problem?
 The Individual Coordination performance is exceptionally fast, followed by Brute Coordination and then Max-Plus. Despite being fast, IC has unpredictable behaviour and sometimes it can perform better than any other algorithms. While in other cases its performance is compromised. The Max-Plus algorithm performance is dependent on the total number of iterations performed. However for low iterations, the MP can outperform BC, however the resulting actions may or may not be optimal.
