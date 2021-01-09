@@ -1,7 +1,7 @@
-# MultiAgentDQRNForDifferentTrafficDemands
+# Multi-Agent DQRN For Different Traffic Demands
 
 ## Introduction:
-
+In today’s world due to rapid urbanisation there has been a shift of population from rural to urban areas especially in developing countries in search of better opportunities. This has lead to unplanned urbanisation leading to a particularly important issue of increased traffic congestion. This has in turn led to environmental degradation and health issues among people. With the current advancement in Artificial Intelligence, especially in the field of Deep Neural Networks various attempts have been made to apply it in the field of Traffic Light Control. This thesis was an attempt to take forward the problem of solving traffic congestion thereby reducing the total travel time. One of the contributions of the thesis was to study the performance of Deep Recurrent Q-network models in different traffic demands for Multi-Agent systems. Another contribution was to apply different coordination algorithms along with Transfer Learning in Multi-Agent Systems or multiple traffic intersections and study their behaviour. Lastly, the performance of these algorithms were also studied when the number of intersections and the demand increase.
 
 ## Research Questions:
 
