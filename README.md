@@ -41,7 +41,25 @@ Three Algorithms used in are:
 * Maxplus Algorithm:
 ![MP](https://github.com/azlaanmsamad/MultiAgentDQRNForDifferentTrafficDemands/blob/main/presentation/maxplusAlgo.png)
 
-
 ## Results:
+The trained network is tested at every 10k time step for different traffic demand for different number of agents using the above mentioned Coordination Algorithms. The results are displayed in terms of heatmaps as shown below:
+
+* Individual Coordination:
+![ICResult](https://github.com/azlaanmsamad/MultiAgentDQRNForDifferentTrafficDemands/blob/main/finalplot/heatmap/TravelTimeHM/IND_HM_TT.png)
+
+* Brute Coordination:
+![BCResult](https://github.com/azlaanmsamad/MultiAgentDQRNForDifferentTrafficDemands/blob/main/finalplot/heatmap/TravelTimeHM/BC_HM_TT.png)
+
+* Maxplus:
+![MPResult](https://github.com/azlaanmsamad/MultiAgentDQRNForDifferentTrafficDemands/blob/main/finalplot/heatmap/TravelTimeHM/MP_HM_TT.png)
 
 ## Conclusion:
+
+* How does the Transfer Planning approach combined with the Max-Plus or the Brute Coordination algorithm perform when compared to the Individual Coordination?
+The Transfer Planning approach significantly saves computational cost and time. It is fruitful when combined with an optimal coordination algorithm. However Individual Coordination lacks observability of the global environment. It acts independently and there is no sort of communication between the direct or indirect neighbours. For most cases towards the end of the training period its performance improves. However its performance is still unpredictable. The performance of Brute Coordination and Max-Plus are similar to each other and they also possess a consistent behaviour unlike IC. The Max-Plus algorithm has better observability than IC due to message passing mechanism. While the BC selects the joint action corresponding to the maximum global payoff.
+
+* How does the TLC agent perform for different traffic demands?
+For a given number of intersections, the increase in the traffic demand causes an introduction of fluctuations. There is an increase in the average travel time and the dip in rewards as the traffic demand increases. The increase in fluctuations when the demand increases varies for the different number of intersections.
+
+• How does the different coordination algorithms perform computationally in case of Traffic Light Control problem?
+The Individual Coordination performance is exceptionally fast, followed by Brute Coordination and then Max-Plus. Despite being fast, IC has unpredictable behaviour and sometimes it can perform better than any other algorithms. While in other cases its performance is compromised. The Max-Plus algorithm performance is dependent on the total number of iterations performed. However for low iterations, the MP can outperform BC, however the resulting actions may or may not be optimal.
