@@ -1,0 +1,78 @@
+parameters:
+    # Common hyperparameters
+    mode: 'train'
+    load: false
+    name: 'model5_6cars'
+    algorithm: PPO
+    port: 8000
+    gui: false
+    env_type: 'SUMO' # 'atari', 'SUMO', or 'gridworld'
+    scene: 'loop_network_dumb'
+    max_steps: 3000
+    max_episode_steps: 5.0e+3
+    frame_height: 26
+    frame_width: 10
+    num_frames: 1
+    skip_frames: 1
+    num_epoch: 4
+    gamma: 0.99
+    lambda: 0.95
+    learning_rate: 2.5e-4
+    batch_size: 256 # THIS NEEDS TO BE SMALLER THAN n_sequences = memory_size // seq_len
+    memory_size: 4096
+    train_frequency: 1
+    save_frequency: 5.0e+4
+    summary_frequency: 1.0e+4
+    tensorboard: true
+    iteration: -1
+    episode: 0
+
+    map: ['.............',
+           '...8.........',
+           '..3.*........',
+           '....*.5......',
+           '...99999.....',
+           '.............',
+           '...8.........',
+           '..3.*........',
+           '....*.5......',
+           '...99999.....']
+
+# MAIN MODEL
+    # Fully connected module
+    fully_connected: true
+    num_fc_layers: 1
+    num_fc_units: [256]
+    # Convolutional module
+    convolutional: true
+    num_conv_layers: 2
+    num_filters: [16, 32]
+    kernel_sizes: [4, 2]
+    strides: [2, 1]
+    # Recurrent module
+    recurrent: false
+    num_rec_units: 512
+    seq_len: 4
+
+    # INFLUENCE MODEL
+    influence: false
+    inf_box_height: 84
+    inf_box_width: 84
+    inf_box_center: [[0, 0]]
+    inf_frame_height: 84
+    inf_frame_width: 84
+    inf_num_frames: 1
+    inf_num_predictors: 1
+    # Influence fully connected module
+    inf_num_fc_layers: 0
+    inf_num_fc_units: [128]
+
+    # Influence recurrent module
+    inf_num_rec_units: 512
+    inf_seq_len: 4
+
+    # PPO only
+    beta: 5.0e-3
+    epsilon: 0.2
+    time_horizon: 128
+    c1: 0.5

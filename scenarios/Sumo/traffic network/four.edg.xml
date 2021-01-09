@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+   <edge id="01" from="0" to="1" priority="78" numLanes="1" speed="19.444" />
+   <edge id="10" from="1" to="0" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="02" from="0" to="2" priority="78" numLanes="1" speed="19.444" />
+   <edge id="20" from="2" to="0" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="23" from="2" to="3" priority="78" numLanes="1" speed="19.444" />
+   <edge id="32" from="3" to="2" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="13" from="1" to="3" priority="78" numLanes="1" speed="19.444" />
+   <edge id="31" from="3" to="1" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="50" from="5" to="0" priority="78" numLanes="1" speed="19.444" />
+   <edge id="05" from="0" to="5" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="40" from="4" to="0" priority="78" numLanes="1" speed="19.444" />
+   <edge id="04" from="0" to="4" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="61" from="6" to="1" priority="78" numLanes="1" speed="19.444" />
+   <edge id="16" from="1" to="6" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="71" from="7" to="1" priority="78" numLanes="1" speed="19.444" />
+   <edge id="17" from="1" to="7" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="92" from="9" to="2" priority="78" numLanes="1" speed="19.444" />
+   <edge id="29" from="2" to="9" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="82" from="8" to="2" priority="78" numLanes="1" speed="19.444" />
+   <edge id="28" from="2" to="8" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="103" from="10" to="3" priority="78" numLanes="1" speed="19.444" />
+   <edge id="310" from="3" to="10" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="311" from="3" to="11" priority="78" numLanes="1" speed="19.444" />
+   <edge id="113" from="11" to="3" priority="46" numLanes="1" speed="11.111" />
+
+</edges>
+

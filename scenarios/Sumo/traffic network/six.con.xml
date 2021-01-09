@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<connections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/connections_file.xsd">
+        
+        <!-- vertical -->
+	<connection from="70" to="03"/>
+	<connection from="03" to="312"/>
+
+	<connection from="81" to="14"/>
+	<connection from="14" to="413"/>
+
+	<connection from="92" to="25"/>
+	<connection from="25" to="514"/>
+    
+	<connection from="123" to="30"/>
+	<connection from="30" to="07"/>
+
+	<connection from="134" to="41"/>
+	<connection from="41" to="18"/>
+
+	<connection from="145" to="52"/>
+	<connection from="52" to="29"/>
+        
+        <!-- Upper horizontal -->
+	<connection from="60" to="01"/>
+	<connection from="01" to="12"/>
+	<connection from="12" to="210"/>
+
+	<connection from="102" to="21"/>
+	<connection from="21" to="10"/>
+	<connection from="10" to="06"/>
+
+        <!-- Lower horizontal -->
+	<connection from="113" to="34"/>
+	<connection from="34" to="45"/>
+	<connection from="45" to="515"/>
+
+	<connection from="15i" to="54"/>
+	<connection from="54" to="43"/>
+	<connection from="43" to="311"/>
+</connections>

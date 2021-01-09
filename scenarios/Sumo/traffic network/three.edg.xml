@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+   <edge id="01" from="0" to="1" priority="78" numLanes="1" speed="19.444" />
+   <edge id="10" from="1" to="0" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="12" from="1" to="2" priority="78" numLanes="1" speed="19.444" />
+   <edge id="21" from="2" to="1" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="03" from="0" to="3" priority="78" numLanes="1" speed="19.444" />
+   <edge id="30" from="3" to="0" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="40" from="4" to="0" priority="78" numLanes="1" speed="19.444" />
+   <edge id="04" from="0" to="4" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="51" from="5" to="1" priority="78" numLanes="1" speed="19.444" />
+   <edge id="15" from="1" to="5" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="62" from="6" to="2" priority="78" numLanes="1" speed="19.444" />
+   <edge id="26" from="2" to="6" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="27" from="2" to="7" priority="78" numLanes="1" speed="19.444" />
+   <edge id="72" from="7" to="2" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="80" from="8" to="0" priority="78" numLanes="1" speed="19.444" />
+   <edge id="08" from="0" to="8" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="91" from="9" to="1" priority="78" numLanes="1" speed="19.444" />
+   <edge id="19" from="1" to="9" priority="46" numLanes="1" speed="11.111" />
+
+   <edge id="102" from="10" to="2" priority="78" numLanes="1" speed="19.444" />
+   <edge id="210" from="2" to="10" priority="46" numLanes="1" speed="11.111" />
+
+</edges>
+

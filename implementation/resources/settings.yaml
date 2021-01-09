@@ -1,0 +1,14 @@
+steps: 1000
+robots: [ {"id": "r1", "pos": [3, 4]}, {"id": "r2", "pos": "random"} ]
+tasks: [[3,3], 'random']
+P_action_succeed: {'LEFT':0.9, 'RIGHT':0.9, 'ACT':0.5, 'UP':0.9, 'DOWN':0.9}
+P_task_appears: 0.99
+allow_robot_overlap: False
+allow_task_overlap: False
+map:
+ - ..........
+ - ...8......
+ - ..3.*.....
+ - ....*.5...
+ - ...99999..
+                

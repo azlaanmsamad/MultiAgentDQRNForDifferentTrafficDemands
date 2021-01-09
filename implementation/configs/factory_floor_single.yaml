@@ -1,0 +1,15 @@
+parameters:
+    # Common hyperparameters
+    steps: 1000
+    robots: ['random']  # initial robot positions
+    tasks: [ [1, 1] ]  # initial task positions
+    P_action_succeed: {'LEFT':0.9, 'RIGHT':0.9, 'ACT':0.5, 'UP':0.9, 'DOWN':0.9}
+    P_task_appears: 0.99  # P(new task appears in step) 
+    allow_robot_overlap: False
+    allow_task_overlap: False
+    seed: None
+    map: ['..........',
+          '...8......',
+          '..3.*.....',
+          '....*.5...',
+          '...99999..']

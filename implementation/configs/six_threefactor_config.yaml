@@ -1,0 +1,73 @@
+parameters:
+    skip_frames: 1
+    box_bottom_corner: [4.6, 4.6]
+    box_top_corner: [1994.42, 1495]
+
+    y_t: 4 # yellow light traffic time
+
+    resolutionInPixelsPerMeterX: 0.0425  #0.055  #0.056 #84x84 configuration
+    resolutionInPixelsPerMeterY: 0.086  #0.055 #0.085
+
+    scaling_factor: 1 # Used to scale the rewards, but for now set to 1.
+
+    local_rewards: True
+    waiting_penalty: True
+    new_reward: False
+
+    agent_neighbour_combo: {0: [1,4],
+                            1: [0, 2, 4],
+                            2: [1, 5],
+                            3: [0, 4],
+                            4: [1, 3, 5],
+                            5: [2, 4]}
+
+    lightPositions: {"0": [[501, 989], [489, 998], [498, 1010], [510, 1001]],
+                     "1": [[1001, 989], [988, 998], [998, 1011], [1011, 1001]],
+                     "2": [[1501, 989], [1489, 998], [1498, 1011], [1511, 1001]],
+                     "3": [[501, 489], [488.7, 498], [498.35, 510], [510, 501]],
+                     "4": [[1001.5, 489], [989, 498], [998.2, 510.7], [1010, 502]],
+                     "5": [[1501, 489], [1489, 498.5], [1498, 511], [1511, 501.5]]}
+
+    factored_coords: {"0": [[5, 520], [1985, 1495]],
+                      "1": [[5, 5], [1985, 980]]}
+
+    libsumo: False
+    factored_agents: {'0': [0,1,2],
+                      '1': [3,4,5]}
+
+    factored_agent_type: {"0": 'three',
+                          "1": 'three'}
+
+    testmodelnr: {'three': 110000}
+
+    coordination_algo: 'brute'
+    max_iter: None
+
+    seed: 56
+
+    tripinfofolder: 'six_intersection'
+
+    test: True
+    test_seed: [16753, 35821, 9675, 2193, 52120, 70142, 67371, 4470, 78146, 69491, 44398, 66521, 88094, 71935, 90747, 32224, 30813, 15315, 71678, 38054, 6603, 1548, 47881, 81064, 21234, 12045, 47394, 64234, 55742, 76628]
+
+    generate_conf: True
+
+    tlphasesfile: 'six.net.xml'
+    route_starts: []
+    route_ends: []
+    route_max_segments: 1
+    route_min_segments: 1
+    route_segments: ['70 03 312', '123 30 07', '81 14 413', '134 41 18', '92 25 514', '145 52 29',
+                     '60 01 12 210', '102 21 10 06', '102 21 10 06', '113 34 45 515', '15i 54 43 311']
+
+    car_pr: 0.4
+    car_tm: 3600
+
+    scene: 'six_intersection'
+    env_type: 'SUMO'
+
+    gui: True
+
+    type: 'byCorners'
+    speed_dev: 0.0
+    verbose: 0

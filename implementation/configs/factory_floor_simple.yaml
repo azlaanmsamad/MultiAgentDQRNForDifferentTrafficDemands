@@ -1,0 +1,13 @@
+parameters:
+    # Common hyperparameters
+    steps: 3
+    robots: [{"id": "robot", "pos": [0,0]}]  # initial robot positions
+    tasks: []  # initial task positions
+    P_action_succeed: {'LEFT':1.0, 'RIGHT':1.0, 'ACT':1.0, 'UP':1.0, 'DOWN':1.0}
+    P_task_appears: 1.0  # P(new task appears in step) 
+    allow_robot_overlap: False
+    allow_task_overlap: True
+    seed: None
+    map: ['..',
+          '..',
+          '9.']

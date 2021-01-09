@@ -1,0 +1,65 @@
+parameters:
+    skip_frames: 1
+    box_bottom_corner: [4, 4] 
+    box_top_corner: [1995, 994]  
+   
+    y_t: 4 # yellow light traffic time
+
+    resolutionInPixelsPerMeterX: 0.057  #for test with thre padder
+    resolutionInPixelsPerMeterY: 0.085  #for test with three padder
+
+    scaling_factor: 1 # Used to scale the rewards, but for now set to 1.
+
+    local_rewards: True
+    waiting_penalty: True
+    new_reward: False
+
+    agent_neighbour_combo: {0: [1],
+                            1: [0, 2],
+                            2: [1]}
+
+    lightPositions: {"0": [[501, 488.7], [489, 498.4], [498, 511], [511, 501]],
+                     "1": [[1001, 488.7], [989, 498.4], [998, 511], [1011, 501]],
+                     "2": [[1501, 488.7], [1489, 498.4], [1498, 511], [1511, 501]]}
+
+    factored_coords: {"0": [[4, 4], [1477, 994]],
+                      "1": [[518, 4], [1977, 994]]}
+
+    libsumo: False
+    factored_agents: {"0": [0, 1],
+                      "1": [1, 2]}
+ 
+    # Factored agent number can be a string but make sure that the actual agents represented as a list are input as int as above.
+
+    factored_agent_type: {"0": 'horizontal',
+                          "1": 'horizontal'}
+   
+    testmodelnr: {'vertical': 110000}
+
+    seed: 56
+
+    tripinfofolder: 'three_intersection'
+
+    test: True
+    test_seed: [16753, 35821, 9675, 2193, 52120, 70142, 67371, 4470, 78146, 69491, 44398, 66521, 88094, 71935, 90747, 32224, 30813, 15315, 71678, 38054, 6603, 1548, 47881, 81064, 21234, 12045, 47394, 64234, 55742, 76628]  
+
+    generate_conf: True
+
+    tlphasesfile: 'three.net.xml'
+    route_starts: []
+    route_ends: []
+    route_max_segments: 1
+    route_min_segments: 1
+    route_segments: ['30 01 12 27', '72 21 10 03', '40 08', '80 04', '91 15', '51 19', '62 210', '102 26']
+
+    car_pr: 0.4
+    car_tm: 3600
+
+    scene: 'three_intersection'
+    env_type: 'SUMO'
+
+    gui: False
+
+    type: 'byCorners'
+    speed_dev: 0.0
+    verbose: 0

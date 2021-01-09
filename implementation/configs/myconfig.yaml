@@ -1,0 +1,61 @@
+parameters:
+    skip_frames: 1
+    box_bottom_corner: [0, 0] # still needs to be set for cross_network= done
+    box_top_corner: [1500, 1000]  # stil needs to be set for cross_network= done.
+   
+    y_t: 4 # yellow light traffic time
+
+    resolutionInPixelsPerMeterX: 0.056
+    resolutionInPixelsPerMeterY: 0.084
+
+    scaling_factor: 1 # Used to scale the rewards, but for now set to 1.
+
+    local_rewards: True
+    waiting_penalty: True
+    new_reward: False
+
+# Either of the new_reward or waiting_penalty can be set True and not both.
+
+    lightPositions: {"0": [[1001.5,492.5], [987,498],  [998.3,507.38], [1012,501.3]],
+                     "1": [[501,492], [485,498], [498,507], [511,501]]} # Need to know how to get the traffic light positions.
+
+    libsumo: False # Need to know what happens if I set it to False, since inside the 
+                   # sumogymadapter which initialises the ldm which in turn chooses between libsumo or traci.
+
+    seed: 56 # need to change in the actual sumo library 
+
+    generate_conf: True # it is used inside the sumohelper.py It is used to generate the sumoconfig file from the nodes, edges etc.
+
+    factored_agents: {0: ['0','1'],
+                      1: ['1','2']}
+
+    factored_coords: {0: [[0,0],[1000,1000]],
+                      1: [[500,0],[1500,1000]]}
+
+    tlphasesfile: 'multi.net.xml'
+    route_starts: []
+    route_ends: []
+    route_max_segments: 1
+    route_min_segments: 1
+    route_segments: ['5i 1i 2o', '2i 1o 5o', '3i 4o', '4i 3o', '6i 7o', '7i 6o']
+
+# For now only add array of segments that will define the route of your vehicle.
+# These are used inside sumphlper.py's generate_randomized_route() function in order to 
+# generate routes.
+
+    car_pr: 0.4
+    car_tm: 3600
+
+# These are used to generate vehicle for each possible route in the scenario and writes
+# them to a file and returns the location of the sumocfg file.
+
+    scene: 'multi_intersection_grid'
+    env_type: 'SUMO'
+
+# This is used to define the directory where we save the file for route and configuration.
+# Its inside the scenario directory.
+
+    gui: False
+    type: 'byCorners' # need to change it in the actual sumo file 
+    speed_dev: 0.0
+    verbose: 0

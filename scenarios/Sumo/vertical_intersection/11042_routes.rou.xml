@@ -1,0 +1,61 @@
+<routes>
+
+    <route id="1" edges="6i 7o"/>
+    <route id="2" edges="4i 1o 5o"/>
+    <route id="3" edges="2i 3o"/>
+    <route id="4" edges="3i 2o"/>
+    <route id="5" edges="7i 6o"/>
+    <route id="6" edges="4i 1o 5o"/>
+    <route id="7" edges="6i 7o"/>
+    <route id="8" edges="4i 1o 5o"/>
+    <route id="9" edges="7i 6o"/>
+    <route id="10" edges="3i 2o"/>
+    <route id="11" edges="2i 3o"/>
+    <route id="12" edges="3i 2o"/>
+    <route id="13" edges="2i 3o"/>
+    <route id="14" edges="2i 3o"/>
+    <route id="15" edges="6i 7o"/>
+    <route id="16" edges="7i 6o"/>
+    <route id="17" edges="6i 7o"/>
+    <route id="18" edges="3i 2o"/>
+    <route id="19" edges="5i 1i 4o"/>
+    <route id="20" edges="5i 1i 4o"/>
+    <route id="21" edges="2i 3o"/>
+    <route id="22" edges="5i 1i 4o"/>
+    <route id="23" edges="7i 6o"/>
+    <route id="24" edges="4i 1o 5o"/>
+    <route id="25" edges="5i 1i 4o"/>
+    <route id="26" edges="4i 1o 5o"/>
+    <route id="27" edges="6i 7o"/>
+    <route id="28" edges="4i 1o 5o"/>
+
+    <vehicle id="1_69" route="1" depart="69" />
+    <vehicle id="2_245" route="2" depart="245" />
+    <vehicle id="3_534" route="3" depart="534" />
+    <vehicle id="4_604" route="4" depart="604" />
+    <vehicle id="5_802" route="5" depart="802" />
+    <vehicle id="6_1072" route="6" depart="1072" />
+    <vehicle id="7_1081" route="7" depart="1081" />
+    <vehicle id="8_1244" route="8" depart="1244" />
+    <vehicle id="9_1288" route="9" depart="1288" />
+    <vehicle id="10_1644" route="10" depart="1644" />
+    <vehicle id="11_1796" route="11" depart="1796" />
+    <vehicle id="12_2045" route="12" depart="2045" />
+    <vehicle id="13_2053" route="13" depart="2053" />
+    <vehicle id="14_2142" route="14" depart="2142" />
+    <vehicle id="15_2171" route="15" depart="2171" />
+    <vehicle id="16_2178" route="16" depart="2178" />
+    <vehicle id="17_2198" route="17" depart="2198" />
+    <vehicle id="18_2255" route="18" depart="2255" />
+    <vehicle id="19_2376" route="19" depart="2376" />
+    <vehicle id="20_2476" route="20" depart="2476" />
+    <vehicle id="21_2557" route="21" depart="2557" />
+    <vehicle id="22_2631" route="22" depart="2631" />
+    <vehicle id="23_2679" route="23" depart="2679" />
+    <vehicle id="24_2786" route="24" depart="2786" />
+    <vehicle id="25_2892" route="25" depart="2892" />
+    <vehicle id="26_3455" route="26" depart="3455" />
+    <vehicle id="27_3479" route="27" depart="3479" />
+    <vehicle id="28_3595" route="28" depart="3595" />
+
+</routes>

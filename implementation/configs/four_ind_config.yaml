@@ -1,0 +1,73 @@
+parameters:
+    skip_frames: 1
+    box_bottom_corner: [18, 18]     # test[4, 4] 
+    box_top_corner: [1482, 1482] #test [1995, 994]  
+
+    y_t: 4 # yellow light traffic time
+
+    resolutionInPixelsPerMeterX: 0.087  # 0.057  for test with thre padder
+    resolutionInPixelsPerMeterY: 0.087 #0.085   for test with three padder
+
+    scaling_factor: 1 # Used to scale the rewards, but for now set to 1.
+
+    local_rewards: True
+    waiting_penalty: True
+    new_reward: False
+
+    agent_neighbour_combo: {0: [1, 2],
+                            1: [0, 3],
+                            2: [0, 3],
+                            3: [1, 2]}
+
+    lightPositions: {"0": [[500, 990], [489.8, 998.4], [498.3, 1010], [509.9, 1001.67]],
+                     "1": [[1001.64, 990], [990.54, 998], [998, 1009.95], [1009, 1002]],
+                     "2": [[501.45, 490.25], [490.2, 498.4], [497.8, 509.8], [509.97, 501.6]],
+                     "3": [[1001.43, 490.15],[990.7, 498.4],[998.33, 509.89],[1009.56, 502.15]]}
+
+    factored_coords: {"0": [[18, 518], [982, 1482]],
+                      "1": [[518, 518], [1482, 1482]],
+                      "2": [[18, 18], [982, 982]],
+                      "3": [[518, 18], [1482, 982]]}
+
+    libsumo: False
+    factored_agents: {"0": [0],
+                      "1": [1],
+                      "2": [2],
+                      "3": [3]}
+
+    # Factored agent number can be a string but make sure that the actual agents represented as a list are input as int as above.
+
+    factored_agent_type: {"0": 'individual',
+                          "1": 'individual',
+                          "2": 'individual',
+                          "3": 'individual'}
+
+    testmodelnr: {'individual': 10000}
+
+    seed: 56
+
+    tripinfofolder: 'four_intersection'
+
+    test: True
+    test_seed: [16753, 35821, 9675, 2193, 52120, 70142, 67371, 4470, 78146, 69491, 44398, 66521, 88094, 71935, 90747, 32224, 30813, 15315, 71678, 38054, 6603, 1548, 47881, 81064, 21234, 12045, 47394, 64234, 55742, 76628]
+
+    generate_conf: True
+
+    tlphasesfile: 'four.net.xml'
+    route_starts: []
+    route_ends: []
+    route_max_segments: 1
+    route_min_segments: 1
+    route_segments: ['40 01 17', '71 10 04', '82 23 311', '113 32 28', '50 02 29', '92 20 05', '61 13 310', '103 31 16']
+
+    car_pr: 0.4
+    car_tm: 500
+
+    scene: 'four_intersection'
+    env_type: 'SUMO'
+
+    gui: True
+
+    type: 'byCorners'
+    speed_dev: 0.0
+    verbose: 0
